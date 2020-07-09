@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"
+      integrity="sha512-M+hXwltZ3+0nFQJiVke7pqXY7VdtWW2jVG31zrml+eteTP7im25FdwtLhIBTWkaHRQyPrhO2uy8glLMHZzhFog=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="box flex">
@@ -11,14 +17,75 @@
         <!-- Statrt Sire -->
         <div class="side">
           <div class="login input flex">
-            <div class="logo"></div>
-            Log in width Google
+            <i class="fab fa-google fa-lg"></i>
+            <label>Log in with Google</label>
           </div>
-          or
-          <form></form>
+          <p class="center">or</p>
+          <form>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                class="input"
+                type="email"
+                placeholder="Enter your email"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="field">
+              <label for="password">Password</label>
+              <input
+                class="input"
+                type="password"
+                placeholder="Password"
+                name="password"
+                id="password"
+              />
+            </div>
+            <div class="remember field flex">
+              <div class="flex">
+                <input type="checkbox" name="remember" id="remember" />
+                Remember me
+              </div>
+              <a href="">Forget password?</a>
+            </div>
+            <input class="btn input" type="submit" value="Log in" />
+          </form>
+
+          <div class="center">
+            Don't have an account? <a href="">Sign up</a>
+          </div>
         </div>
         <!-- End Side  -->
-        <div class="side"></div>
+
+        <!-- Start Side  -->
+        <div class="side">
+          <div class="something">
+            <i class="fas fa-fan fa-lg"></i>
+            <label>Development</label>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
+              laborum. Ullam, saepe.
+            </p>
+          </div>
+          <div class="something">
+            <i class="fas fa-gift fa-lg"></i>
+            <label>Features</label>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
+              laborum. Ullam, saepe.
+            </p>
+          </div>
+          <div class="something">
+            <i class="fas fa-pen-square fa-lg"></i>
+            <label>Updates</label>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
+              laborum. Ullam, saepe.
+            </p>
+          </div>
+        </div>
+        <!-- End Side  -->
       </div>
     </div>
   </body>

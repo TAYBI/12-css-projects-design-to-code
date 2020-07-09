@@ -16,10 +16,149 @@ body {
   width: 100%;
   height: 100vh;
   background: #f3fafb;
+  padding: 0;
+  margin: 0;
 }
 
 .box {
-  background-color: #9fa5b5;
-  min-width: 1400px;
-  height: 500px;
+  background-color: #e9ecf8;
+  padding: 1.2rem;
+  max-width: 800px;
+  border-radius: 4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 6fr 7fr;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.side {
+  border: 0.5px solid #e9ecf8;
+  padding: 6rem 3rem 2rem 3rem;
+  background: #ffffff;
+  /* padding-top: 5rem; */
+}
+
+.center {
+  text-align: center;
+  font-size: small;
+  color: #333333;
+}
+
+.input {
+  border: 1px solid #e9ecf8;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  /* width: 390px; */
+}
+
+.login {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #848c94;
+}
+
+.login label {
+  padding-left: 0.5rem;
+}
+.login label:hover {
+  cursor: pointer;
+}
+
+.login:hover {
+  cursor: pointer;
+}
+
+.field {
+  margin-bottom: 1.2rem;
+}
+
+.field label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fas,
+.fab {
+  margin: 10rem;
+}
+
+.remember {
+  justify-content: space-between;
+  align-items: center;
+  color: #848c94;
+}
+.remember input {
+  -webkit-appearance: initial;
+  background-color: #fafafa;
+  border: 1px solid #9fa5b5;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.remember input:active input:checked:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.remember:checked {
+  background-color: #e9ecee;
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
+    inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+  color: #99a1a7;
+}
+
+a {
+  text-decoration: none;
+  color: #5a89f6;
+}
+
+form {
+  margin-bottom: 2.2rem;
+}
+
+.btn {
+  background: #252f44;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Side 2 */
+.something {
+  margin-bottom: 2rem;
+  color: #5a89f6;
+}
+
+.something p {
+  font-size: 0.9rem;
+  padding-left: 2.2rem;
+  color: #333333;
+  margin: 0;
+  margin-top: 5px;
+  line-height: 1.5rem;
+}
+
+.something label {
+  color: #333333;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 1rem;
 }
