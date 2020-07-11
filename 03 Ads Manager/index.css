@@ -15,7 +15,7 @@ body {
 
 .container {
   background: #242e4c;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 2rem 4rem 4rem;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
   color: rgb(189, 189, 189);
@@ -56,21 +56,29 @@ button {
   border: 1px solid #1d2545;
   border-radius: 5px;
   color: #546484;
-  padding: 0.7rem;
+  padding: 0.7rem 1rem;
   cursor: pointer;
 }
 
 span {
   background: #f775c1;
   font-size: small;
-  color: #ffffff;
-  padding: 0 2px;
-  border-radius: 500px;
 }
 
 .not {
   position: relative;
-  top: 0;
+  background: #f775c1;
+  font-size: 12px;
+  color: #ffffff;
+  align-items: center;
+  padding: 1px 8px;
+  padding-bottom: 6px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  right: 15px;
+  bottom: 20px;
 }
 
 td span {
@@ -90,26 +98,47 @@ table tr:first-child td {
   padding: 0.3rem 2rem;
 }
 
-/* table tr + tr {
-} */
+table tr:first-child td:first-child {
+  width: 4px;
+  padding: 0;
+}
 
 .space {
   height: 5px;
 }
 
-table tr + tr td {
+table tr + tr td:not(:first-child) {
   background: #1d2545;
-  padding: 1rem 2rem;
+  padding: 0.6rem 2rem;
   border: none;
+  transition: all ease-in-out 0.4s;
 }
 
-table tr + tr td:last-child .far {
-  border-radius: 0px 4px 4px 0px;
+table tr + tr td:last-child {
+  padding: 10px;
+  text-align: center;
+}
+
+table tr + tr td:last-child div {
+  width: 25px;
   opacity: 0;
+  padding: 7px;
+  background: #242e4c;
+  border-radius: 5px;
+  transition: all ease-in-out 0.4s;
 }
 
-table tr + tr:hover td:not(:first-child),
-i {
+table tr + tr:hover td:not(:first-child) {
+  background: #161f3b;
+  opacity: 1;
+  cursor: pointer;
+}
+
+table tr + tr:hover td:last-child div {
+  opacity: 0.5;
+}
+
+tr:hover td div {
   background: #161f3b;
   opacity: 1;
   cursor: pointer;
@@ -138,6 +167,7 @@ table .blue-border {
 
 table td span {
   font-size: 1rem;
+  padding-right: 0.2rem;
   font-weight: 900;
 }
 
@@ -154,13 +184,13 @@ table td span {
 .plus {
   background: #f775c1;
   border-radius: 50%;
-  padding: 0.5rem;
+  padding: 0.7rem;
   box-shadow: 0px 1px 20px rgba(247, 117, 193, 0.15);
   cursor: pointer;
 }
 
 .plus-container {
-  justify-content: end;
+  justify-content: flex-end;
   color: #ffffff;
 }
 
