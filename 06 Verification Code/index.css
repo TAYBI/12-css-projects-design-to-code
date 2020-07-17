@@ -21,6 +21,8 @@ body {
   grid-template-columns: 1fr 1fr;
   max-width: 920px;
   gap: 69px;
+  /* margin-top: 4rem; */
+  /* margin-bottom: 20px; */
 }
 
 .card {
@@ -29,11 +31,61 @@ body {
   /* max-width: 425px; */
   padding: 60px;
   text-align: center;
-  /* height: 752px; */
+  height: fit-content;
+}
+/* card left */
+
+.crard-left input[type="radio"],
+.crard-left input[type="radio"] + label {
+  display: inline;
 }
 
+.crard-left input + label {
+  font-size: 18px;
+}
+
+.field {
+  margin-top: 35px;
+}
+
+.crard-left .light-gray {
+  text-align: left;
+  padding-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 134.7%;
+}
+
+.crard-left .margin {
+  margin-bottom: 60px;
+}
+
+.left {
+  text-align: left;
+}
+
+/* Card right */
 .card + .card {
   margin-top: 80px;
+}
+
+.card + .card .light-gray {
+  margin-top: 16px;
+}
+
+.card + .card label {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+
+.card + .card input[type="checkbox"] {
+  display: inline;
+}
+
+.card + .card input[type="checkbox"] + label {
+  display: inline;
+  font-weight: normal;
 }
 
 .h1 {
@@ -49,7 +101,8 @@ a {
 
 form {
   text-align: left;
-  margin: 25px 0px;
+  margin: 55px 0px 0px 0px;
+  padding-bottom: 80px;
 }
 
 form * {
@@ -60,4 +113,92 @@ form * {
   font-size: 14px;
   color: #1b1a34;
   opacity: 0.67;
+}
+
+form input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 23px;
+  border-radius: 10px;
+  border: 2px solid rgba(27, 26, 52, 29%);
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #1b1a34;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.btn-big {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  margin-bottom: 30px;
+}
+
+.btn-small {
+  display: inline;
+  padding: 13px 20px;
+  padding-bottom: 13px;
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+/* Check Box  and radio*/
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 15px;
+}
+
+input[type="radio"]::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 15px;
+  top: -8px;
+  left: -5px;
+  position: relative;
+  display: inline-block;
+  visibility: visible;
+  background-color: #ffffff;
+  color: #1b1a34;
+  border: 2px solid #1b1a34;
+}
+
+input[type="radio"]:checked::after {
+  height: 20px;
+  content: "\25CF";
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding-bottom: 4px;
+}
+
+input[type="checkbox"]::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  top: -8px;
+  left: -5px;
+  position: relative;
+  display: inline-block;
+  visibility: visible;
+  background-color: #ffffff;
+  color: #1b1a34;
+  border: 2px solid #1b1a34;
+}
+
+input[type="checkbox"]:checked::after {
+  height: 20px;
+  content: "✓";
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding-bottom: 4px;
 }

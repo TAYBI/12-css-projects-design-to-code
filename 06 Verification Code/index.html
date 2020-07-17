@@ -8,16 +8,20 @@
   </head>
   <body>
     <div class="container">
-      <div class="card">
+      <div class="card crard-left">
         <p class="h1">Login Verification</p>
         <p class="discription">
           To continue logging in we need you to complete one of the following:
         </p>
         <form>
-          <input type="radio" name="cerivation" id="" />
-          <label for="">Verification code via email</label>
-          <input type="radio" name="cerivation" id="" value="" />
-          <label for="">Verification code via SMS</label>
+          <div class="field">
+            <input type="radio" name="cerivation" id="" />
+            <label for="">Verification code via email</label>
+          </div>
+          <div class="field">
+            <input type="radio" name="cerivation" id="" value="" />
+            <label for="">Verification code via SMS</label>
+          </div>
           <div class="light-gray">
             We’ll send a code to your mobile phone that can enter to verify your
             identity.
@@ -25,9 +29,11 @@
           <div class="btn btn-small">Send SMS Code</div>
         </form>
 
-        <input type="checkbox" name="" id="" />
-        <label for="">Remember this device</label>
-        <div class="light-gray">
+        <div class="left">
+          <input type="checkbox" name="" id="" />
+          <label for="">Remember this device</label>
+        </div>
+        <div class="light-gray margin">
           Don’t select this option if you’re using a public computer
         </div>
         <a href="">Return to Login</a>
@@ -43,9 +49,9 @@
           <input type="text" placeholder="Enter your username" />
           <label for="">Password</label>
           <input type="text" placeholder="Enter your password" />
+          <div class="btn btn-big">Log In</div>
           <input type="checkbox" name="" id="" />
           <label for="">Keep me logged in</label>
-          <div class="btn btn-big">Log In</div>
         </form>
 
         <a href="">Forgot password?</a>
