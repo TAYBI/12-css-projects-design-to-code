@@ -39,13 +39,21 @@ nav,
 
 .btn {
   font-weight: bold;
+  font-family: "Mulish", sans-serif;
   padding: 1rem 3rem;
   margin-top: 1rem;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   color: #ffffff;
   background: #eb6649;
   box-shadow: 0px 4px 10px rgba(235, 102, 73, 0.25);
+  transition: all ease-in-out 0.4s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 nav a {
@@ -66,25 +74,33 @@ nav .selected {
 }
 
 .cards {
-  /* max-width: 860px; */
+  max-width: 600px;
   overflow: hidden;
   margin: 0.5rem 2rem;
+  transition: all ease-in-out 0.4s;
 }
 
 .card {
+  /* width: 270px; */
   border: solid 1px #e5e5e5;
   border-radius: 10px;
   margin: 1rem;
+  /* transform: translateX(-290px); */
   text-align: center;
+  transition: all ease-in-out 0.4s;
 }
 
 .fa-chevron-right,
 .fa-chevron-left {
   color: #747069;
+  transition: opacity ease-in-out 0.4s;
 }
+
 .fa-3x:hover {
   cursor: pointer;
+  opacity: 0.5;
 }
+
 .dicription {
   padding: 2rem 1.3rem;
 }

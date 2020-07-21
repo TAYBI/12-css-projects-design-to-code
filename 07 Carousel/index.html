@@ -10,7 +10,6 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
   </head>
   <body>
     <div class="container">
@@ -21,7 +20,9 @@
         <a href="#">Sculpture</a>
       </nav>
       <div class="carousel flex">
-        <i class="fas fa-chevron-left fa-3x"></i>
+        <div class="right">
+          <i class="fas fa-chevron-left fa-3x"></i>
+        </div>
         <div class="flex cards">
           <div class="card">
             <div class="img">
@@ -63,11 +64,14 @@
             </div>
           </div>
         </div>
-        <i class="fas fa-chevron-right fa-3x"></i>
+        <div class="left">
+          <i class="fas fa-chevron-right fa-3x"></i>
+        </div>
       </div>
       <div class="btncontainer flex">
         <button class="btn">View more</button>
       </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>
