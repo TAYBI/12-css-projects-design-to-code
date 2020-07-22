@@ -13,3 +13,34 @@ html {
 body {
   background: #eef1fc;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-dis {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+.section {
+  text-align: left;
+}
