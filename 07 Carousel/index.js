@@ -22,6 +22,5 @@ left.addEventListener("click", () => {
 right.addEventListener("click", () => {
   if (index != 2) move_card(290);
   index--;
-  // card left
   console.log("right");
 });
