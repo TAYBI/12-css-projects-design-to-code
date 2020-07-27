@@ -7,4 +7,57 @@ html {
 body {
   background: linear-gradient(320.67deg, #2f2e41 0%, #3f3d56 100%);
   color: #ffffff;
+  overflow-x: hidden;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.container {
+  max-width: 855px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.panel {
+  width: 100%;
+  background: #2d2b40;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+  gap: 1rem;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+  .nav {
+    justify-content: center;
+  }
+  .panel {
+    grid-template-columns: 1fr;
+  }
+  .panel .section {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero .illustration {
+    display: none;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    text-align: center;
+  }
 }
