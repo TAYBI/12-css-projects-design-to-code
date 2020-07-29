@@ -2,3 +2,96 @@
 html {
   font-family: "Mulish", sans-serif;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0d1e5c;
+  color: #b6c1e2;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.img-2 {
+  position: absolute;
+  transform: rotate(180deg);
+  width: 300px;
+  right: 8rem;
+}
+
+.img-1 {
+  position: relative;
+  left: 30%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex .icon {
+  position: relative;
+  top: -60px;
+  left: 20px;
+}
+
+.flex h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 7px;
+}
+
+.flex p {
+  font-size: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.content p {
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: normal;
+  padding-left: 140px;
+  padding-bottom: 35px;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 380px) {
+  .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .flex .icon {
+    top: 0;
+    left: 10px;
+  }
+  h1 {
+    padding-bottom: 30px;
+  }
+}
